@@ -37,10 +37,170 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo img {
+nav .logo,
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a,
+footer .logo a {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img {
     width: 40px;
     height: 40px;
+}
+
+nav ul,
+footer .top ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav button {
+    color: #1c1e53;
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #1c1e53;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #5e3bee;
+    border-color: #5e3bee;
+    color: #fff;
+}
+
+nav button#menuButton {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 7px;
+    border: none;
+}
+
+.main {
+    background-color: #deebee;
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.main .left h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 46px;
+}
+
+.main .left h3 span {
+    color: #5e3bee;
+}
+
+.main .left p {
+    color: #1c1e53;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.main .left button {
+    margin-top: 40px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #5e3bee;
+    padding: 14px 24px;
+    border-radius: 1px solid transparent;
+    border-radius: 5px;
+    border-color: #5e3bee;
+    transition: all 0.3s ease-in-out;
+}
+
+.main .left button:hover {
+    background-color: #7556f3;
+    border-color: #7556f3;
+}
+
+.main .right img {
+    width: 500px;
+}
+
+.skills {
+    padding: 110px 85px 0;
+    margin-bottom: 900px;
+}
+
+.skills h3,
+.about .right h3,
+.portfolio .header h3,
+.feedback h3 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.skills .skill-items {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.skills .skill-items .item {
+    background-color: #deebee;
+    width: 25%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover {
+    border-color: #5e3bee;
+}
+
+.skills .skill-items .item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-items .item .icon i{
+    font-size: 26px;
+    color: #006b6a;
+}
+
+.skills .skill-items .item h4,
+.portfolio .portfo-items .item .info h4{
+    font-size: 20px;
+}
+
+.skills .skill-items .item p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1c1e53;
 }
