@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +15,14 @@
     <nav>
         <div class="logo">
             <img src="./assets/logonav.png" alt="logo">
-            <a href="https://github.com/DenilsoferreiraL" target="_blank"> Developer Front-End </a>
+            <a href="https://github.com/DenilsoferreiraL" target="_blank"> Developer Front-End Jr. </a>
         </div>
         <ul>
             <li><a href="#main">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#about">Aboute Me</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#feedback">Feedback</a></li>
+
         </ul>
         <button>Contact Me</button>
         <button id="menuButton" onclick="openMenu()">
@@ -33,7 +33,7 @@
     <div class="main" id="main">
         <div class="left">
             <h5>Hey, I am Denilso 👋 </h5>
-            <h3>Developer Front-end <span>Creating Digital Experiences</span></h3>
+            <h3><span>Creating Digital Experiences</span></h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veritatis non odio possimus quidem
                 mollitia eos? Officia tempore, optio, magni maiores repudiandae, ea nesciunt sint fugiat quis ipsum
@@ -46,40 +46,46 @@
         </div>
     </div>
     <div class="skills" id="skills">
-        <h5>My Skills</h5>
+        <h3>Skills</h3>
+        <div class="skill"  translate="no">
+            <p><i class='bx bxl-html5'></i>HTML</p>
+            <p><i class='bx bxl-css3'></i>CSS</p>
+            <p><i class='bx bxl-javascript'></i>JavaScript</p>
+            <p><i class='bx bxl-nodejs'></i>Node.js</p>
+            <p><i class='bx bxl-react'></i>React.js</p>
+            <p><i class='bx bxl-docker'></i>Docker</p>
+            <p><i class='bx bxl-postgresql'></i>PostgreSQL</p>
+        </div>
         <h3>My expertise</h3>
         <div class="skill-items">
             <div class="item">
-                <div class="icon"><i class='bx bx-directions'></i></div>
-                <h4>Strategy & Direction</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem nobis facilis vel
-                    aspernatur, quo cupiditate architecto possimus quasi illo tempore provident asperiores sunt nulla
-                    laborum quidem consequuntur itaque facere.</p>
+                <div class="icon"><i class='bx bx-desktop'></i></div>
+                <h4>Responsive Design</h4>
+                <p>Ability to create interfaces that adapt to different screen sizes, providing a consistent experience
+                    on mobile and desktop devices.</p>
             </div>
             <div class="item">
-                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
-                <h4>Branding & logo</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem nobis facilis vel
-                    aspernatur, quo cupiditate architecto possimus quasi illo tempore provident asperiores sunt nulla
-                    laborum quidem consequuntur itaque facere.</p>
-            </div>
-            <div class="item">
-                <div class="icon"><i class='bx bxl-figma'></i></i></div>
-                <h4>Ui & UX Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem nobis facilis vel
-                    aspernatur, quo cupiditate architecto possimus quasi illo tempore provident asperiores sunt nulla
-                    laborum quidem consequuntur itaque facere.</p>
+                <div class="icon"><i class='bx bx-bug'></i></div>
+                <h4>Testing and Debugging</h4>
+                <p>Ability to test and debug code to ensure the quality of the final product.</p>
             </div>
             <div class="item">
                 <div class="icon"><i class='bx bx-code-alt'></i></div>
-                <h4>Webflow Coding</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem nobis facilis vel
-                    aspernatur, quo cupiditate architecto possimus quasi illo tempore provident asperiores sunt nulla
-                    laborum quidem consequuntur itaque facere.</p>
+                <h4>JavaScript</h4>
+                <p>I use JavaScript to make web pages interactive by manipulating the DOM and making asynchronous calls
+                    to APIs.</p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bx-filter-alt'></i></div>
+                <h4>SEO Knowledge</h4>
+                <p>I understand search engine optimization (SEO) practices to improve a website's visibility and organic
+                    ranking. I implement strategies to improve content relevance, site structure, appropriate use of
+                    keywords and technical optimizations. This results in a stronger online presence and better
+                    positioning in search results.</p>
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="left">
             <img src="./assets/person.png" alt="person">
         </div>
@@ -144,10 +150,9 @@
             </div>
         </div>
     </div>
+    <div class="contact">
+        <h3>Contact</h3>
 
-    <div class="feedback" id="feedback">
-        <h5>CLients Reviews</h5>
-        <h3>Customers Fessback</h3>
     </div>
 
     <script src="./script.js"></script>
