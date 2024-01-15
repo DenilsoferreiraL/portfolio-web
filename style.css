@@ -56,8 +56,9 @@ footer .logo a {
 
 nav .logo img,
 footer .logo img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    border: transparent;
 }
 
 nav ul,
@@ -152,14 +153,14 @@ nav button#menuButton {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-   
+
 }
 
 .skill p:hover {
     -xpedu-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
-  
+
 }
 
 .skills .skill p {
@@ -170,7 +171,7 @@ nav button#menuButton {
     font-size: 15px;
     transition: all 0.3s ease;
     cursor: pointer;
-    
+
 }
 
 .skills .skill i {
@@ -205,7 +206,7 @@ nav button#menuButton {
 
 .skills .skill-items .item:hover {
     border-color: #5e3bee;
-    
+
 }
 
 .skills .skill-items .item .icon {
@@ -336,4 +337,40 @@ nav button#menuButton {
 .portfolio .portfo-items .item .info a i {
     margin-left: 2px;
     font-size: 16px;
+}
+
+footer {
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top,
+footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .top .social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+footer .bottom p {
+    font-size: 12px;
+}
+
+footere .bottom .links a {
+    font-size: 12px;
+    margin-left: 14px;
 }
