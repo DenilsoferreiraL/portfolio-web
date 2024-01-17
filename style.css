@@ -45,6 +45,7 @@ nav .logo,
 footer .logo {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav .logo a,
@@ -324,7 +325,7 @@ nav button#menuButton {
 }
 
 .portfolio .portfo-items .item .info p {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .portfolio .portfo-items .item .info a {
@@ -367,10 +368,10 @@ footer .separator {
 }
 
 footer .bottom p {
-    font-size: 12px;
+    font-size: 15px;
 }
 
-footere .bottom .links a {
-    font-size: 12px;
+footer .bottom .links a {
+    font-size: 15px;
     margin-left: 14px;
 }
