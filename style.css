@@ -13,16 +13,17 @@ html {
 
 a {
     text-decoration: none;
-    color: #1c1e53;
+    color: #000000;
     transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #5e3bee !important;
+    color: #033caa !important;
 }
 
 h5 {
     font-size: 25px;
+    color: #033caa;
 }
 
 li {
@@ -68,19 +69,9 @@ footer .top ul {
     gap: 40px;
 }
 
-nav button {
-    color: #1c1e53;
-    background-color: transparent;
-    padding: 12px 16px;
-    border-radius: 5px;
-    border: 1px solid #1c1e53;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
 nav button:hover {
-    background-color: #5e3bee;
-    border-color: #5e3bee;
+    background-color: #033caa;
+    border-color: #033caa;
     color: #fff;
 }
 
@@ -94,56 +85,49 @@ nav button#menuButton {
 }
 
 .main {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(31, 22, 105, 1) 0%, rgba(15, 5, 76, 1) 77%, rgba(12, 4, 68, 1) 86%, rgba(12, 4, 68, 1) 95%, rgba(15, 5, 76, 1) 99%);
-    padding: 150px 85px;
+    background: rgb(205,205,205);
+    background: radial-gradient(circle, rgba(205,205,205,1) 0%, rgba(227,226,226,1) 19%, rgba(255,255,255,1) 64%);
+    padding: 400px 85px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
+    text-align: center;
 }
 
 .main .left {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    gap: 25px;
 }
 
 .main .left h3 {
     margin-top: 10px;
     font-weight: bold;
-    font-size: 46px;
+    font-size: 55px;
 }
 
-.main .left h3 span {
-    color: #666af6;
-}
-
-.main .left p {
-    color: #1c1e53;
-    font-size: 22px;
-    margin-top: 20px;
+.main .left h5 span {
+    color: #033caa;
+   
 }
 
 .main .left button {
     margin-top: 40px;
     color: #fff;
     cursor: pointer;
-    background-color: #666af6;
+    background-color: #033caa;
     padding: 14px 24px;
     border-radius: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: #5e3bee;
     transition: all 0.3s ease-in-out;
+    font-size: 15px;
 }
 
 .main .left button:hover {
-    background-color: #7556f3;
-    border-color: #7556f3;
-}
-
-.main .right img {
-    width: 500px;
+    background-color: #000000;
+    border-color: #000000;
 }
 
 .skills {
@@ -155,6 +139,7 @@ nav button#menuButton {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    padding: 110px 85px;
 
 }
 
@@ -166,11 +151,11 @@ nav button#menuButton {
 }
 
 .skills .skill p {
-    width: 100px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
 
@@ -178,7 +163,7 @@ nav button#menuButton {
 
 .skills .skill i {
     margin-top: 25px;
-    font-size: 50px;
+    font-size: 90px;
     gap: 10px;
 }
 
@@ -197,7 +182,7 @@ nav button#menuButton {
 }
 
 .skills .skill-items .item {
-    background-color: #deebee;
+    background-color: #dedede;
     width: 25%;
     border-radius: 10px;
     padding: 32px;
@@ -207,7 +192,7 @@ nav button#menuButton {
 }
 
 .skills .skill-items .item:hover {
-    border-color: #5e3bee;
+    border-color: #033caa;
 
 }
 
@@ -225,7 +210,7 @@ nav button#menuButton {
 
 .skills .skill-items .item .icon i {
     font-size: 26px;
-    color: #006b6a;
+    color: #0c0a0a;
 }
 
 .skills .skill-items .item h4,
@@ -235,8 +220,8 @@ nav button#menuButton {
 
 .skills .skill-items .item p {
     margin-top: 20px;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 25px;
     color: #1c1e53;
 }
 
@@ -248,7 +233,7 @@ nav button#menuButton {
 }
 
 .about .left {
-    background-color: #deebee;
+    background-color: #dedede;
     border-radius: 10px 10px 0 0;
 }
 
@@ -258,12 +243,12 @@ nav button#menuButton {
 }
 
 .about .right p {
-    font-size: 16px;
+    font-size: 19px;
     margin-top: 30px;
 }
 
 .portfolio {
-    background-color: #deebee;
+    background-color: #dedede;
     padding: 110px 85px;
 }
 
@@ -307,7 +292,7 @@ nav button#menuButton {
 }
 
 .portfolio .portfo-items .item:hover {
-    border-color: #5e3bee;
+    border-color: #033caa;
 }
 
 .portfolio .portfo-items .item img {
@@ -321,24 +306,24 @@ nav button#menuButton {
 .portfolio .portfo-items .item .info {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 15px;
     padding: 20px 32px 42px;
 }
 
 .portfolio .portfo-items .item .info p {
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .portfolio .portfo-items .item .info a {
     text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-color: #5e3bee;
+    text-underline-offset: 12px;
+    text-decoration-color: #033caa;
 
 }
 
 .portfolio .portfo-items .item .info a i {
     margin-left: 2px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 footer {
@@ -485,6 +470,7 @@ footer .bottom .links a {
 
     nav button#menuButton {
         display: flex;
+        background: transparent;
     }
 
     .main {
@@ -531,7 +517,12 @@ footer .bottom .links a {
     }
 
     nav .logo a {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
     }
 
     .main .left h3 {
