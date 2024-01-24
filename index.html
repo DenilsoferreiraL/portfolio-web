@@ -7,18 +7,19 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
     <title>Portfólio</title>
 </head>
 
 <body>
 
+
     <nav>
         <div class="logo">
             <img src="./assets/logo-white.svg" alt="logo">
-            <a href="https://github.com/DenilsoferreiraL" target="_blank"> Developer Front-End Jr. </a>
         </div>
         <ul>
-            <li translate="no"><a href="#main">Home</a></li>
+            <li translate="no"><a href="#header">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#about">Aboute Me</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
@@ -29,32 +30,53 @@
         </button>
     </nav>
 
-    <div class="main" id="main">
-        <div class="left">
-            <h3>Denilso Ferreira Leite</h3>
-            <h5><span>Creating Digital Experiences</span></h5>
-            
-            <a href="#about"><button>Learn More</button></a>
+    <div class="header" id="header">
+
+        <div class="inner-header flex">
+            <h3>Developer Web Front-End Jr.</h3>
+            <h5>Creating Digital Experiences</h5>
         </div>
-       
+
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="content flex">
+            <a href="https://drive.google.com/file/d/1ai80RUSwPZimCiSOYv_g-cqSgLUKa-W-/view?usp=sharing" target="_blank"
+                rel="noopener noreferrer"> <button>Curriculum</button></a>
+        </div>
     </div>
     <div class="skills" id="skills">
         <h3>Skills</h3>
         <div class="skill" translate="no">
-            <p><i class='bx bxl-html5'></i>HTML</p>
-            <p><i class='bx bxl-css3'></i>CSS</p>
-            <p><i class='bx bxl-javascript'></i>JavaScript</p>
-            <p><i class='bx bxl-nodejs'></i>Node.js</p>
-            <p><i class='bx bxl-react'></i>React.js</p>
-            <p><i class='bx bxl-docker'></i>Docker</p>
-            <p><i class='bx bxl-postgresql'></i>PostgreSQL</p>
+            <p><i class='bx bxl-html5'></i><span>HTML</span></p>
+            <p><i class='bx bxl-css3'></i><span>CSS</span></p>
+            <p><i class='bx bxl-javascript'></i><span>JavaScript</span></p>
+            <p><i class='bx bxl-nodejs'></i><span>Node.js</span></p>
+            <p><i class='bx bxl-react'></i><span>React.js</span></p>
+            <p><i class='bx bxl-docker'></i><span>Docker</span></p>
+            <p><i class='bx bxl-postgresql'></i><span>PostgreSQL</span></p>
+            <p><i class='bx bxl-figma'></i><span>Figma</span></p>
         </div>
-        <h3>My expertise</h3>
+        <h3>My Expertise</h3>
         <div class="skill-items">
             <div class="item">
                 <div class="icon"><i class='bx bx-desktop'></i></div>
                 <h4>Responsive Design</h4>
-                <p>Ability to create interfaces that adapt to different screen sizes, providing a consistent experience
+                <p>Ability to create interfaces that adapt to different screen sizes, providing a consistent
+                    experience
                     on mobile and desktop devices.</p>
             </div>
             <div class="item">
@@ -65,15 +87,18 @@
             <div class="item">
                 <div class="icon"><i class='bx bx-code-alt'></i></div>
                 <h4>JavaScript</h4>
-                <p>I use JavaScript to make web pages interactive by manipulating the DOM and making asynchronous calls
+                <p>I use JavaScript to make web pages interactive by manipulating the DOM and making asynchronous
+                    calls
                     to APIs.</p>
             </div>
             <div class="item">
                 <div class="icon"><i class='bx bx-filter-alt'></i></div>
                 <h4>SEO Knowledge</h4>
                 <p>I have search engine optimization (SEO) practices to improve a website's visibility and organic
-                    ranking. I use strategies to improve content relevance, site structure, appropriate use of keywords
-                    and technical optimizations. This results in a stronger online presence and better positioning in
+                    ranking. I use strategies to improve content relevance, site structure, appropriate use of
+                    keywords
+                    and technical optimizations. This results in a stronger online presence and better positioning
+                    in
                     search results.</p>
             </div>
         </div>
@@ -85,9 +110,11 @@
         <div class="right">
             <h3>About Me</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fuga, libero sint cumque unde vel
-                possimus culpa eum dolore at, vitae magni tempora quos temporibus neque perferendis commodi quibusdam
+                possimus culpa eum dolore at, vitae magni tempora quos temporibus neque perferendis commodi
+                quibusdam
                 in!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quo iusto dignissimos perspiciatis, odio
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quo iusto dignissimos perspiciatis,
+                odio
                 sapiente esse cum quidem atque error expedita a unde impedit natus odit nostrum, ad ut autem.</p>
         </div>
     </div>
@@ -95,7 +122,7 @@
     <div class="portfolio" id="portfolio">
         <div class="header">
             <div class="info">
-                <h5>Recent Projects</h5>
+                <h3>Recent Projects</h3>
                 <h3>My Portfolio</h3>
             </div>
             <a href="https://github.com/DenilsoferreiraL"><button><i class='bx bxl-github'></i>Visit My
@@ -107,7 +134,8 @@
                 <img href="https://portfoliocriativo.netlify.app/" src="./assets/web-site1.PNG">
                 <div class="info">
                     <h4>site #1</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste possimus atque, corporis dolorum
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste possimus atque, corporis
+                        dolorum
                         dolores
                         velit quod voluptatum, saepe officia ut officiis libero in vitae, facere explicabo similique
                         suscipit at
@@ -120,7 +148,8 @@
                 <img src="./assets/web-site2.PNG">
                 <div class="info">
                     <h4>site #2</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste possimus atque, corporis dolorum
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste possimus atque, corporis
+                        dolorum
                         dolores
                         velit quod voluptatum, saepe officia ut officiis libero in vitae, facere explicabo similique
                         suscipit at
@@ -133,9 +162,10 @@
                 <img src="./assets/web-site3.PNG">
                 <div class="info">
                     <h4>site #3</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste possimus atque, corporis dolorum
-                        dolores
-                        velit quod voluptatum, saepe officia ut officiis libero in vitae, facere explicabo similique
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste possimus atque, corporis
+                        dolorum
+                        doloresvelit quod voluptatum, saepe officia ut officiis libero in vitae, facere explicabo
+                        similique
                         suscipit at
                         maiores.</p>
                     <a href="#" target="_blank">Click here! <i class='bx bx-link-external'></i></a>
@@ -146,7 +176,7 @@
     <footer>
         <div class="footer">
             <div class="logo">
-                <img src="./assets/logo-white.svg" alt="logo">
+                <img src="./assets/logo-black.svg" alt="logo">
                 <a href="https://www.linkedin.com/in/denilso-ferreira-leite/">Denilso Ferreira Leite</a>
 
                 <div class="social-links">

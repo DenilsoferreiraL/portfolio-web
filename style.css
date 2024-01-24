@@ -11,6 +11,10 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgb(190, 247, 255) 100%);
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -18,12 +22,12 @@ a {
 }
 
 a:hover {
-    color: #033caa !important;
+    color: #5c49bd !important;
 }
 
 h5 {
     font-size: 25px;
-    color: #033caa;
+    color: #5c49bd;
 }
 
 li {
@@ -31,7 +35,7 @@ li {
 }
 
 nav {
-    background-color: #fff;
+    background: #ffffff;
     position: sticky;
     top: 0;
     padding: 0 85px;
@@ -49,17 +53,17 @@ footer .logo {
     justify-content: space-between;
 }
 
-nav .logo a,
 footer .logo a {
-    margin-left: 15px;
+    color: #ffffff;
+    margin-left: 5px;
     font-weight: bold;
     font-size: 20px;
 }
 
 nav .logo img,
 footer .logo img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border: transparent;
 }
 
@@ -69,11 +73,6 @@ footer .top ul {
     gap: 40px;
 }
 
-nav button:hover {
-    background-color: #033caa;
-    border-color: #033caa;
-    color: #fff;
-}
 
 nav button#menuButton {
     display: none;
@@ -84,50 +83,112 @@ nav button#menuButton {
     border: none;
 }
 
-.main {
-    background: rgb(205,205,205);
-    background: radial-gradient(circle, rgba(205,205,205,1) 0%, rgba(227,226,226,1) 19%, rgba(255,255,255,1) 64%);
-    padding: 400px 85px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+.header {
     text-align: center;
+    background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgb(190, 247, 255) 100%);
+    color: white;
 }
 
-.main .left {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.main .left h3 {
-    margin-top: 10px;
-    font-weight: bold;
+.inner-header h3 {
     font-size: 55px;
 }
 
-.main .left h5 span {
-    color: #033caa;
-   
+.inner-header h5 {
+    margin-top: 15px;
+    font-size: 30px;
 }
 
-.main .left button {
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.waves {
+    width: 100%;
+    height: auto;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.content {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 80px;
+
+}
+
+.content a button {
     margin-top: 40px;
     color: #fff;
     cursor: pointer;
-    background-color: #033caa;
-    padding: 14px 24px;
-    border-radius: 1px solid transparent;
-    border-radius: 10px;
-    border-color: #5e3bee;
+    background-color: #5c49bd;
+    padding: 20px 30px;
+    border-radius: 30px 200px 30px 200px;
+    border-color: #5c49bd;
     transition: all 0.3s ease-in-out;
-    font-size: 15px;
+    font-size: 18px;
 }
 
-.main .left button:hover {
+.content a button:hover {
     background-color: #000000;
     border-color: #000000;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
 }
 
 .skills {
@@ -151,6 +212,7 @@ nav button#menuButton {
 }
 
 .skills .skill p {
+    color: #5c49bd;
     width: 150px;
     display: flex;
     flex-direction: column;
@@ -158,7 +220,11 @@ nav button#menuButton {
     font-size: 20px;
     transition: all 0.3s ease;
     cursor: pointer;
+}
 
+.skills .skill span {
+    color: #ffffff;
+    padding: 10px;
 }
 
 .skills .skill i {
@@ -171,6 +237,7 @@ nav button#menuButton {
 .about .right h3,
 .portfolio .header h3,
 .feedback h3 {
+    color: #ffffff;
     font-size: 40px;
     margin-top: 30px;
 }
@@ -182,17 +249,17 @@ nav button#menuButton {
 }
 
 .skills .skill-items .item {
-    background-color: #dedede;
+    background-color: #ffffff;
     width: 25%;
     border-radius: 10px;
     padding: 32px;
-    border-bottom: 4px solid transparent;
+    border-bottom: 7px solid transparent;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .skills .skill-items .item:hover {
-    border-color: #033caa;
+    border-color: #000000;
 
 }
 
@@ -222,19 +289,14 @@ nav button#menuButton {
     margin-top: 20px;
     font-size: 16px;
     line-height: 25px;
-    color: #1c1e53;
+    color: #000000
 }
 
 .about {
-    padding: 110px;
+    padding: 200px;
     display: flex;
     align-items: center;
     gap: 60px;
-}
-
-.about .left {
-    background-color: #dedede;
-    border-radius: 10px 10px 0 0;
 }
 
 
@@ -243,16 +305,17 @@ nav button#menuButton {
 }
 
 .about .right p {
-    font-size: 19px;
+    font-size: 25px;
     margin-top: 30px;
+    color: #ffffff;
 }
 
 .portfolio {
-    background-color: #dedede;
     padding: 110px 85px;
 }
 
 .portfolio .header {
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -283,16 +346,17 @@ nav button#menuButton {
 
 .portfolio .portfo-items .item {
     width: 30%;
+    color: #000000;
     background-color: #fff;
     border-radius: 10px;
-    border-bottom: 4px solid transparent;
+    border-bottom: 7px solid transparent;
     cursor: pointer;
     box-shadow: 0 5px 32px rgba(0.0.0.0.15);
     transition: all 0.3s ease;
 }
 
 .portfolio .portfo-items .item:hover {
-    border-color: #033caa;
+    border-color: #000000;
 }
 
 .portfolio .portfo-items .item img {
@@ -348,42 +412,29 @@ footer .top .social-links {
 
 footer .social-links a {
     font-size: 30px;
+    color: #ffffff;
 }
 
 footer .separator {
     width: 100%;
     height: 1px;
-    background-color: #282938;
+    background-color: #ffffff;
     margin: 30px 0 20px;
 }
 
 footer .bottom p {
-    font-size: 15px;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 footer .bottom .links a {
+    color: #ffffff;
     font-size: 15px;
     margin-left: 14px;
 }
 
 
 @media screen and (max-width:1200px) {
-
-    .main .left h5 {
-        font-size: 18px;
-    }
-
-    .main .left h3 {
-        font-size: 36px;
-    }
-
-    .main .left p {
-        font-size: 18px;
-    }
-
-    .main .right img {
-        width: 380px;
-    }
 
     .skills .skill-items {
         gap: 10px;
@@ -430,10 +481,6 @@ footer .bottom .links a {
         font-size: 15px;
     }
 
-    .main {
-        flex-direction: column;
-    }
-
     .about {
         flex-direction: column;
         justify-content: center;
@@ -460,9 +507,6 @@ footer .bottom .links a {
         display: none;
     }
 
-    nav.open .logo {
-        display: none;
-    }
 
     nav.open ul {
         display: flex;
@@ -471,10 +515,6 @@ footer .bottom .links a {
     nav button#menuButton {
         display: flex;
         background: transparent;
-    }
-
-    .main {
-        padding: 42px;
     }
 
     .skills {
@@ -516,25 +556,18 @@ footer .bottom .links a {
         font-size: 13px;
     }
 
+    nav .logo {
+        display: none;
+    }
+
     nav .logo a {
         font-size: 15px;
     }
 
     nav {
         display: flex;
-        justify-content: space-around;
-    }
-
-    .main .left h3 {
-        font-size: 32px;
-    }
-
-    .main .left p {
-        font-size: 16px;
-    }
-
-    .main .left button {
-        width: 100%;
+        justify-content: flex-end;
+        gap: 30px;
     }
 
     .skill .skill {
@@ -557,7 +590,8 @@ footer .bottom .links a {
 
     .portfolio .header button {
         font-size: 12px;
-        padding: 8px 14px;
+        padding: 10px 14px;
+        margin-top: 15px;
     }
 
     footer {
