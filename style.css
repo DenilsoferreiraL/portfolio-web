@@ -124,12 +124,12 @@ nav button#menuButton {
 .content {
     text-align: center;
     background-color: white;
-    padding-bottom: 80px;
+    padding-bottom: 125px;
 
 }
 
 .content a button {
-    margin-top: 40px;
+    margin-top: 50px;
     color: #fff;
     cursor: pointer;
     background-color: #5c49bd;
@@ -305,7 +305,7 @@ nav button#menuButton {
 }
 
 .about .right p {
-    font-size: 25px;
+    font-size: 23px;
     margin-top: 30px;
     color: #ffffff;
 }
@@ -320,6 +320,12 @@ nav button#menuButton {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
+}
+
+.portfolio .header h5{
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 20px;
 }
 
 .portfolio .header button {
@@ -341,7 +347,8 @@ nav button#menuButton {
 .portfolio .portfo-items {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
 }
 
 .portfolio .portfo-items .item {
@@ -371,7 +378,7 @@ nav button#menuButton {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 20px 32px 42px;
+    padding: 30px 32px 42px;
 }
 
 .portfolio .portfo-items .item .info p {
@@ -429,10 +436,13 @@ footer .bottom p {
 
 footer .bottom .links a {
     color: #ffffff;
-    font-size: 15px;
-    margin-left: 14px;
+    font-size: 20px;
 }
 
+footer .bottom .links a i{
+    font-size: 23px;
+    margin-left: 5px;
+}
 
 @media screen and (max-width:1200px) {
 
@@ -487,7 +497,7 @@ footer .bottom .links a {
     }
 
     .portfolio .portfo-items {
-        gap: 22px;
+        gap:30px;
         flex-wrap: wrap;
         justify-content: center;
     }
