@@ -322,7 +322,7 @@ nav button#menuButton {
     margin-bottom: 60px;
 }
 
-.portfolio .header h5{
+.portfolio .header h5 {
     color: #ffffff;
     font-size: 25px;
     margin-top: 20px;
@@ -439,7 +439,7 @@ footer .bottom .links a {
     font-size: 20px;
 }
 
-footer .bottom .links a i{
+footer .bottom .links a i {
     font-size: 23px;
     margin-left: 5px;
 }
@@ -497,7 +497,7 @@ footer .bottom .links a i{
     }
 
     .portfolio .portfo-items {
-        gap:30px;
+        gap: 30px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -571,20 +571,24 @@ footer .bottom .links a i{
     }
 
     nav .logo a {
-        font-size: 15px;
+        font-size: 18px;
+    }
+
+    nav {
+        height: 60px;
     }
 
     nav {
         display: flex;
         justify-content: flex-end;
-        gap: 30px;
+        gap: 40px;
     }
 
-    .header .inner-header h3{
-        font-size: 30px;
+    .header .inner-header h3 {
+        font-size: 27px;
     }
 
-    .header .inner-header h5{
+    .header .inner-header h5 {
         font-size: 20px;
     }
 
