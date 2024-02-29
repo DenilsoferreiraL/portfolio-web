@@ -12,20 +12,16 @@
 </head>
 
 <body>
-
-
     <nav>
-        <div class="logo">
-            <img src="./assets/logo-white.svg" alt="logo">
-        </div>
         <ul>
             <li translate="no"><a href="#header">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">Aboute Me</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#networks">Networks</a></li>
 
         </ul>
-        <button id="menuButton" onclick="openMenu()">
+        <button id="menuButton" onclick="toggleMenu()()">
             <i class='bx bx-menu'></i>
         </button>
     </nav>
@@ -33,7 +29,7 @@
     <div class="header" id="header">
 
         <div class="inner-header flex">
-            <h3>Developer Web Front-End Jr.</h3>
+            <h3>Hi, I'm Denilso, Web Developer</h3>
             <h5>Creating Digital Experiences</h5>
         </div>
 
@@ -61,6 +57,7 @@
     <div class="skills" id="skills">
         <h3>Skills</h3>
         <div class="skill" translate="no">
+            <!-- https://boxicons.com/ -->
             <p><i class='bx bxl-html5'></i><span>HTML</span></p>
             <p><i class='bx bxl-css3'></i><span>CSS</span></p>
             <p><i class='bx bxl-javascript'></i><span>JavaScript</span></p>
@@ -69,6 +66,7 @@
             <p><i class='bx bxl-react'></i><span>React.js</span></p>
             <p><i class='bx bxl-docker'></i><span>Docker</span></p>
             <p><i class='bx bxl-postgresql'></i><span>PostgreSQL</span></p>
+            <p><i class='bx bxl-mongodb'></i><span>MongoDB</span></p>
             <p><i class='bx bxl-figma'></i><span>Figma</span></p>
         </div>
         <h3>My Expertise</h3>
@@ -111,16 +109,15 @@
             <img src="./assets/person.png" alt="person">
         </div>
         <div class="right">
-            <h3>About Me</h3>
-            <p> Denilso Ferreira Leite, 23 years old, freelance web developer. Specialized in creating minimalist and
-                visually appealing websites, with an emphasis on trust and security in projects. The autonomy of
-                freelancing has extraordinarily strengthened my practice, while the constant flexibility drives my daily
-                practice. I highlight my exceptional ability to collaborate efficiently as a team, meeting demands
-                together.</p>
+            <p> In my technological repertoire, I have accumulated knowledge in several areas, from frontend development
+                with React.js and JavaScript to the design of responsive interfaces using Styled-Components and CSS
+                frameworks. I have experience building robust APIs with Node.js and Express.js, integrating services
+                with RESTful services and microservices, and managing data with PostgreSQL and MongoDB. To ensure
+                efficiency and scalability in development, I use Docker and task executors. Additionally, I'm used to
+                using prototyping tools like Figma, ensuring a user-centric approach from the design phase. My approach
+                is always focused on creating modern, functional web solutions adapted to user needs and project
+                requirements.</p>
 
-            <p> In my career, I faced and overcame challenges with dedication and passion for what I do. I am fully
-                available to embrace future challenges and add even more experience to my journey. Committed to
-                excellence, I continue to look for opportunities to advance my career.</p>
         </div>
     </div>
 
@@ -139,7 +136,7 @@
                 <img href="https://portfoliocriativo.netlify.app/" src="./assets/web-site1.PNG">
                 <div class="info">
                     <h4>Portfólio PRO</h4>
-                    <p>Page that is under development, focuses on delivering the best simplified and professional
+                    <p>Focuses on delivering the best simplified and professional
                         experience for portfolio creation, highlighting your skills in a practical and interactive way.
                         Designed for professionals who want to make an excellent first impression, the platform offers
                         several facilities to create an attractive portfolio.</p>
@@ -154,30 +151,27 @@
                     <p>Welcome to Secure Access - where logging in becomes an experience! This example page highlights
                         an attractive and secure aesthetic with different login methods. This example shows my clients
                         what I can do differently. It's not just about logging in, it's about connecting with style and
-                        security..</p>
+                        security.</p>
                     <a href="https://secureacccess.netlify.app/" target="_blank">Click here! <i
                             class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <!-- <div class="item">
+            <div class="item">
                 <img src="./assets/web-site3.PNG">
                 <div class="info">
-                    <h4>site #3</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste possimus atque, corporis
-                        dolorum
-                        doloresvelit quod voluptatum, saepe officia ut officiis libero in vitae, facere explicabo
-                        similique
-                        suscipit at
-                        maiores.</p>
-                    <a href="#" target="_blank">Click here! <i class='bx bx-link-external'></i></a>
-                </div> -->
+                    <h4>Users Login</h4>
+                    <p>I'm developing a page that uses technologies such as semantic HTML, CSS Flexbox, JavaScript and
+                        React.js. This page will have integration between the front-end and back-end, where we will use
+                        Node.js to create the API, following the HTTP protocol, which defines methods such as GET, POST,
+                        PUT and DELETE to manipulate data. It will soon be available in our portfolio.</p>
+                    <!-- <a href="#" target="_blank">Click here! <i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
         </div>
     </div>
-    </div>
     <footer>
-        <div class="footer">
+        <div class="footer" id="networks">
             <div class="logo">
-                <img src="./assets/logo-black.svg" alt="logo">
                 <a target="_blank" href="https://www.linkedin.com/in/denilso-ferreira-leite/">Denilso Ferreira Leite</a>
 
                 <div class="social-links">
@@ -194,7 +188,6 @@
         </div>
         <div class="separator"></div>
         <div class="bottom">
-            <p>Agradeço a atenção ❤️ </p>
             <div class="links">
                 <a href="#header">Topo<i class='bx bxs-to-top'></i></a>
 

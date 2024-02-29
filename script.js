@@ -1,9 +1,11 @@
-function openMenu() {
-    const nav = document.querySelector('nav')
-    nav.classList.toggle('open')
-}
+function toggleMenu() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('open');
+    nav.classList.add('animate'); // Adiciona a classe de animação
 
-function random(max) {
-    return Math.random() * max;
+    // Remove a classe de animação após 0.3s
+    setTimeout(function() {
+        nav.classList.remove('animate');
+    }, 300);
 }
 
