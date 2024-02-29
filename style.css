@@ -1,701 +1,803 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    background: linear-gradient(60deg,
-            rgba(84, 58, 183, 1) 0%,
-            rgb(190, 247, 255) 100%);
+  background: linear-gradient(60deg,
+      rgba(84, 58, 183, 1) 0%,
+      rgb(190, 247, 255) 100%);
 }
 
 a {
-    text-decoration: none;
-    color: #5c49bd;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    margin-right: 30px;
+  text-decoration: none;
+  color: #5c49bd;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 a:hover {
-    color: #baacff !important;
+  color: #baacff !important;
 }
 
 h5 {
-    font-size: 25px;
-    color: #5c49bd;
+  font-size: 25px;
+  color: #5c49bd;
 }
 
 li {
-    display: flex;
-    list-style: none;
-    transition: all 0.3s ease;
-    margin-left: 20px;
+  display: flex;
+  list-style: none;
+  transition: all 0.3s ease;
+  margin-left: 20px;
 }
 
 nav {
-    background: #ffffff;
-    position: sticky;
-    top: 0;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    font-size: 20px;
-    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  font-size: 20px;
+  box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
 }
 
 nav.open ul {
-    display: flex;
-    align-items: center;
-    animation: slideDown 0.4s ease;
+  display: flex;
+  align-items: center;
+  animation: slideDown 0.4s ease;
 }
 
 nav li:hover {
-    -xpedu-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+  -xpedu-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 nav .logo,
 footer .logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer .logo a {
-    color: #ffffff;
-    margin-left: 5px;
-    font-weight: bold;
-    font-size: 20px;
+  color: #ffffff;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 nav ul,
 footer .top ul {
-    display: flex;
-    margin-right: 30px;
+  display: flex;
+  margin-right: 30px;
 }
 
 nav button#menuButton {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    border: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border: none;
 }
 
 .header {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 .inner-header {
-    height: 65vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .inner-header h3 {
-    font-size: 55px;
+  font-size: 55px;
 }
 
 .inner-header h5 {
-    margin-top: 15px;
-    font-size: 30px;
+  margin-top: 15px;
+  font-size: 30px;
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .waves {
-    width: 100%;
-    height: auto;
-    margin-bottom: -7px;
-    min-height: 100px;
-    max-height: 150px;
+  width: 100%;
+  height: auto;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
 }
 
 .content {
-    text-align: center;
-    background-color: white;
-    padding-bottom: 16vh;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 16vh;
 }
 
 .content a button {
-    cursor: pointer;
-    background: linear-gradient(60deg,
-            rgb(125, 93, 255) 0%,
-            rgb(190, 247, 255) 100%);
-    color: white;
-    padding: 20px 30px;
-    border-radius: 30px 200px 30px 200px;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    font-size: 15px;
-    margin: 30px 0;
+  cursor: pointer;
+  background: linear-gradient(60deg,
+      rgb(125, 93, 255) 0%,
+      rgb(190, 247, 255) 100%);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 30px 200px 30px 200px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  margin: 30px 0;
 }
 
 .content a button:hover {
-    background-color: #000000;
-    border-color: #000000;
-    -xpedu-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+  background-color: #000000;
+  border-color: #000000;
+  -xpedu-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .parallax>use {
-    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 
 .parallax>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
+  animation-delay: -2s;
+  animation-duration: 7s;
 }
 
 .parallax>use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
+  animation-delay: -3s;
+  animation-duration: 10s;
 }
 
 .parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
+  animation-delay: -4s;
+  animation-duration: 13s;
 }
 
 .parallax>use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
+  animation-delay: -5s;
+  animation-duration: 20s;
 }
 
 @keyframes move-forever {
-    0% {
-        transform: translate3d(-90px, 0, 0);
-    }
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
 
-    100% {
-        transform: translate3d(85px, 0, 0);
-    }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
 }
 
 @keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-    }
+  0% {
+    transform: translateY(-100%);
+  }
 
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
-    .waves {
-        height: 40px;
-        min-height: 40px;
-    }
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
 
-    .content {
-        height: 30vh;
-    }
+  .content {
+    height: 30vh;
+  }
 }
 
 .skills {
-    padding: 110px 85px 0;
+  padding: 110px 85px 0;
 }
 
 .skills .skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    padding: 110px 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 110px 85px;
 }
 
 .skill p:hover {
-    -xpedu-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+  -xpedu-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .skills .skill p {
-    color: #5c49bd;
-    margin: 0 15px;
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 20px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  color: #5c49bd;
+  margin: 0 15px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .skills .skill span {
-    color: #ffffff;
-    padding: 10px;
+  color: #ffffff;
+  padding: 10px;
 }
 
-.skills .skill p:hover{
-    color: #000000 !important;
+.skills .skill p:hover {
+  color: #000000 !important;
 }
 
 .skills .skill i {
-    margin-top: 25px;
-    font-size: 90px;
-    gap: 10px;
+  margin-top: 25px;
+  font-size: 90px;
+  gap: 10px;
 }
 
 .skills h3,
 .about .right h3,
 .portfolio .header h3,
 .feedback h3 {
-    color: #ffffff;
-    font-size: 40px;
-    margin-top: 30px;
+  color: #ffffff;
+  font-size: 40px;
+  margin-top: 30px;
 }
 
 .skills .skill-items {
-    display: flex;
-    margin-top: 70px;
-    gap: 30px;
+  display: flex;
+  margin-top: 70px;
+  gap: 30px;
 }
 
 .skills .skill-items .item {
-    background-color: #ffffff;
-    width: 25%;
-    border-radius: 10px;
-    padding: 32px;
-    border-bottom: 7px solid transparent;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  background-color: #ffffff;
+  width: 25%;
+  border-radius: 10px;
+  padding: 32px;
+  border-bottom: 7px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .skills .skill-items .item:hover {
-    border-color: #000000;
+  border-color: #000000;
 }
 
 .skills .skill-items .item .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    width: 46px;
-    height: 46px;
-    border-radius: 10px;
-    margin-bottom: 22px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
 
 .skills .skill-items .item .icon i {
-    font-size: 26px;
-    color: #0c0a0a;
+  font-size: 26px;
+  color: #0c0a0a;
 }
 
 .skills .skill-items .item h4,
 .portfolio .portfo-items .item .info h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .skills .skill-items .item p {
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 25px;
-    color: #000000;
-    text-align: justify;
-    text-indent: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+  text-align: justify;
+  text-indent: 20px;
 }
 
 .about {
-    padding: 200px;
-    display: flex;
-    align-items: center;
-    gap: 60px;
+  padding: 200px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 .about .left img {
-    width: 440px;
+  width: 440px;
 }
 
 .about .right p {
-    font-size: 23px;
-    margin-top: 30px;
-    color: #ffffff;
-    text-align: justify;
-    text-indent: 20px;
+  font-size: 25px;
+  margin-top: 30px;
+  color: #ffffff;
+  text-align: justify;
+  text-indent: 20px;
 }
 
 .portfolio {
-    padding: 110px 85px;
+  padding: 110px 85px;
 }
 
 .portfolio .header {
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 60px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .portfolio .header h5 {
-    color: #ffffff;
-    font-size: 25px;
-    margin-top: 10px;
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 10px;
 }
 
 .portfolio .header button {
-    background-color: #000000;
-    padding: 10px 20px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    gap: 8px;
-    border: none;
-    border-radius: 10px;
+  background-color: #000000;
+  padding: 10px 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
 }
 
 .portfolio .header button i {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .portfolio .portfo-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
-    gap: 40px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+  gap: 40px;
+  justify-items: center;
 }
 
 .portfolio .portfo-items .item {
-    width: 100%;
-    color: #000000;
-    background-color: #fff;
-    border-radius: 10px;
-    border-bottom: 7px solid transparent;
-    cursor: pointer;
-    box-shadow: 0 5px 32px rgba(0.0.15);
-    transition: all 0.3s ease;
+  width: 100%;
+  color: #000000;
+  background-color: #fff;
+  border-radius: 10px;
+  border-bottom: 7px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 5px 32px rgba(0.0.15);
+  transition: all 0.3s ease;
 }
 
 .portfolio .portfo-items .item:hover {
-    border-color: #000000;
+  border-color: #000000;
 }
 
 .portfolio .portfo-items .item img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 10px 10px 20px 20px;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px 10px 20px 20px;
 }
 
 .portfolio .portfo-items .item .info {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 40px 20px;
 }
 
 .portfolio .portfo-items .item .info p {
-    font-size: 17px;
-    margin: 0;
-    text-align: justify;
-    text-indent: 20px;
+  font-size: 17px;
+  margin: 0;
+  text-align: justify;
+  text-indent: 20px;
 }
 
 .portfolio .portfo-items .item .info a {
-    display: flex;
-    padding: 15px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio .portfo-items .item .info a i {
-    margin-left: 2px;
-    font-size: 18px;
+  margin-left: 2px;
+  font-size: 18px;
 }
 
 footer {
-    padding: 85px;
-    display: flex;
-    flex-direction: column;
+  padding: 85px;
+  display: flex;
+  flex-direction: column;
 }
 
 footer .top,
 footer .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .top .social-links {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
 }
 
 footer .social-links a {
-    font-size: 30px;
-    color: #ffffff;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 footer .separator {
-    width: 100%;
-    height: 1px;
-    background-color: #ffffff;
-    margin: 30px 0 35px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 30px 0 35px;
 }
 
 footer .bottom p {
-    font-size: 20px;
-    color: #ffffff;
+  font-size: 20px;
+  color: #ffffff;
 }
 
 footer .bottom .links a {
-    color: #ffffff;
-    font-size: 22px;
+  color: #ffffff;
+  font-size: 22px;
 }
 
 footer .bottom .links a i {
-    font-size: 23px;
-    margin-left: 5px;
+  font-size: 23px;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 1400px) {
-    .skills .skill-items {
-        gap: 10px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+  .skills .skill-items {
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-    .skills .skill {
-        gap: 10px;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+  .skills .skill {
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
-    .skills .skill-items .item {
-        width: 49%;
-    }
+  .skills .skill-items .item {
+    width: 49%;
+  }
 
-    .portfolio .portfo-items .item {
-        width: 100%;
-    }
+  .portfolio .portfo-items .item {
+    width: 100%;
+  }
 
-    .about .left img {
-        width: 400px;
-    }
+  .about .left img {
+    width: 320px;
+  }
 
-    .skills h3,
-    .about .right h3,
-    .portfolio .header h3 {
-        font-size: 32px;
-    }
+  .skills h3,
+  .about .right h3,
+  .portfolio .header h3 {
+    font-size: 32px;
+  }
 
-    .about .right p {
-        font-size: 20px;
-    }
+  .about .right p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    nav button {
-        display: none;
-    }
+  nav ul li a {
+    font-size: 20px;
+    margin-right: 10px;
+  }
 
-    .content {
-        height: 22vh;
-    }
+  .content {
+    height: 25vh;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about .right p {
+    text-align: justify;
+    text-indent: 20px
+  }
+
+  .portfolio .portfo-items {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio .portfo-items .item {
+    width: 80%;
+  }
+
+  footer {
+    width: 100%;
+    padding: 30px 5px;
+  }
+
+  footer .bottom .links a {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  footer .logo a {
+    font-size: 20px;
+  }
+
+  footer .social-links a {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  footer .bottom .links {
+    margin-bottom: 20px;
+  }
 
 
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    .about {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .about .right p {
-        text-align: justify;
-        text-indent: 20px
-    }
-
-    .portfolio .portfo-items {
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .portfolio .portfo-items .item {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        justify-content: end;
-    }
+  nav {
+    justify-content: end;
+  }
 
-    .content {
-        height: 32vh;
-    }
+  .content {
+    height: 32vh;
+  }
 
-    nav ul {
-        display: none;
-    }
+  nav ul {
+    display: none;
+  }
 
-    nav.open ul {
-        display: flex;
-    }
+  nav.open ul {
+    display: flex;
+  }
 
-    nav button#menuButton {
-        display: flex;
-        background: transparent;
-        transition: all 0.3s ease;
-    }
+  nav button#menuButton {
+    display: flex;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
 
-    nav button#menuButton:active {
-        -xpedu-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        transform: scale(1.5);
-    }
+  nav button#menuButton:active {
+    -xpedu-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
 
-    .content button {
-        margin-top: 50%;
-    }
+  .content button {
+    margin-top: 50%;
+  }
 
-    .skills {
-        padding: 85px 42px 0;
-    }
+  .skills {
+    padding: 85px 42px 0;
+  }
 
-    .skills .skill {
-        gap: 10px;
-    }
+  .skills .skill {
+    gap: 10px;
+  }
 
-    .skills .skill-items {
-        gap: 8px;
-    }
+  .skills .skill-items {
+    gap: 8px;
+  }
 
-    .about {
-        padding: 85px 42px;
-    }
+  .about {
+    padding: 85px 42px;
+  }
 
-    .about .right p {
-        text-align: justify;
-        text-indent: 20px
-    }
+  .about .right p {
+    text-align: justify;
+    text-indent: 20px
+  }
 
 
-    .portfolio {
-        padding: 60px 42px;
-    }
+  .portfolio {
+    padding: 60px 42px;
+  }
 
-    .portfolio .portfo-items {
-        gap: 40px;
-    }
+  .portfolio .portfo-items {
+    gap: 40px;
+  }
 
-    footer {
-        padding: 85px 42px;
-    }
+  footer {
+    padding: 85px 42px;
+  }
 
-    footer .bottom {
-        flex-direction: column-reverse;
-        gap: 14px;
-    }
+  footer .bottom {
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    nav ul li a {
-        font-size: 15px;
-    }
+  nav ul li a {
+    font-size: 15px;
+    margin: 0;
+  }
 
-    nav {
-        display: flex;
-        justify-content: end;
-    }
+  nav {
+    display: flex;
+    justify-content: end;
+  }
 
-    .header .inner-header h3 {
-        font-size: 35px;
-    }
+  .header .inner-header h3 {
+    font-size: 35px;
+  }
 
-    .header .inner-header h5 {
-        font-size: 20px;
-    }
+  .header .inner-header h5 {
+    font-size: 20px;
+  }
 
-    .skill .skill {
-        width: 100%;
-    }
+  .skills .skill-items .item h4 {
+    font-size: 19px
+  }
 
-    .skills .skill-items .item {
-        width: 100%;
-    }
+  .skill .skill {
+    width: 100%;
+  }
 
-    .skills .skill-items .item p {
-        text-indent: 0;
-        text-indent: 20px
-    }
+  .skills .skill i {
+    font-size: 77px;
+  }
 
-    .about .right p {
-        text-indent: 0;
-        text-align: justify;
-        text-indent: 20px
-    }
+  .skills .skill span {
+    font-size: 17px;
+  }
 
-    .portfolio .portfo-items .item {
-        width: 80%;
-    }
+  .skills .skill-items .item {
+    width: 100%;
+  }
 
-    .portfolio .portfo-items .item .info p {
-        text-indent: 0;
-        text-indent: 20px
-    }
+  .skills .skill-items .item p {
+    text-indent: 0;
+    text-indent: 20px
+  }
 
-    .portfolio .header {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+  .about .right p {
+    text-indent: 0;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 16px;
+  }
 
-    .portfolio .header button {
-        font-size: 12px;
-        padding: 10px 14px;
-        margin-top: 15px;
-    }
+  .portfolio .portfo-items .item {
+    width: 50%;
+  }
 
-    footer {
-        width: 100%;
-        padding: 30px 5px;
-    }
+  .portfolio .portfo-items .item .info p {
+    text-indent: 0;
+    text-indent: 20px
+  }
 
-    footer .bottom .links a {
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
+  .portfolio .header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    footer .logo a {
-        font-size: 20px;
-    }
+  .portfolio .header button {
+    font-size: 12px;
+    padding: 10px 14px;
+    margin-top: 15px;
+  }
 
-    footer .social-links a {
-        font-size: 30px;
-    }
+  footer {
+    width: 100%;
+    padding: 30px 5px;
+  }
 
-    footer .bottom .links {
-        margin-bottom: 20px;
-    }
+  footer .bottom .links a {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  footer .logo a {
+    font-size: 15px;
+  }
+
+  footer .social-links a {
+    font-size: 30px;
+  }
+
+  footer .bottom .links {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  nav ul li a {
+    font-size: 9px;
+  }
+
+  nav ul {
+    margin-right: 10px;
+  }
+
+  .skills .skill-items .item h4 {
+    font-size: 17px;
+  }
+
+  .skills .skill i {
+    font-size: 70px;
+  }
+
+  .skills .skill span {
+    font-size: 15px;
+  }
+
+  .skills .skill-items .item p {
+    font-size: 15px;
+  }
+
+  .portfolio .portfo-items .item {
+    width: 40%;
+  }
+
+  .about .left img {
+    width: 220px;
+  }
+
+  .about .right p {
+    text-indent: 0;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 15px;
+  }
+
+  .portfolio .portfo-items .item .info p {
+    font-size: 15px;
+  }
+
+  footer {
+    width: 100%;
+    padding: 30px 5px;
+  }
+
+  footer .bottom .links a {
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  footer .logo a {
+    font-size: 10px;
+  }
+
+  footer .social-links a {
+    font-size: 20px;
+  }
+
+  footer .bottom .links {
+    margin-bottom: 10px;
+  }
 }
